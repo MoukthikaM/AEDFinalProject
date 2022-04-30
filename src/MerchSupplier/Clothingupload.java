@@ -61,7 +61,8 @@ public class Clothingupload extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         txtname = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = neax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         BtnUpload = new javax.swing.JButton();
         TxtType = new javax.swing.JTextField();
         TxtPrice = new javax.swing.JTextField();
@@ -73,7 +74,9 @@ public class Clothingupload extends javax.swing.JPanel {
         setBackground(new java.awt.Color(123, 69, 12));
 
         jLabel2.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jLabnt(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel2.setText("Name");
+
+        txtname.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         txtname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtnameActionPerformed(evt);
@@ -90,7 +93,10 @@ public class Clothingupload extends javax.swing.JPanel {
         jLabel5.setText("Quantity");
 
         BtnUpload.setBackground(new java.awt.Color(255, 255, 204));
-        BtnUpload.seterformed(java.awt.event.ActionEvent evt) {
+        BtnUpload.setFont(new java.awt.Font("Marker Felt", 1, 24)); // NOI18N
+        BtnUpload.setText("Upload");
+        BtnUpload.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnUploadActionPerformed(evt);
             }
         });
@@ -103,7 +109,8 @@ public class Clothingupload extends javax.swing.JPanel {
         });
 
         TxtPrice.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        TxtPrice.addAcerformed(java.awt.event.ActionEvent evt) {
+        TxtPrice.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TxtPriceActionPerformed(evt);
             }
         });
